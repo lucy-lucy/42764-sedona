@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Людмила Котляр](https://up.htmlacademy.ru/htmlcss/15/user/42764).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Петров](https://htmlacademy.ru/profile/fyvfyv).
 
 ---
 
