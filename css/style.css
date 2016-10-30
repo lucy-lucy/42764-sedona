@@ -34,3 +34,89 @@ h2 {
   font-size: 30px;
   line-height: 0.8;
 }
+
+.wrapper {
+  min-width: 768px;
+  max-width: 1200px;
+}
+
+.main-header {
+  width: 100%;
+}
+
+.main-navigation {
+  width: 100%;
+}
+
+.main-image {
+  width: 100%;
+  min-height: 508px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-features {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.features-header {
+  width: 576px;
+  min-height: 216px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.row{
+  width: 100%;
+}
+
+.reason-item {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.reason-image {
+  float: left;
+  width: 67%;
+  margin: 0;
+}
+
+.features-item {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+
+.search-block {
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-footer {
+  width: 100%;
+}
+
+.footer-contacts {
+  float: left;
+  width: 33.333%;
+}
+
+.footer-social {
+  float: left;
+  width: 33.333%;
+}
+
+.footer-copyright {
+  float: left;
+  width: 33.333%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

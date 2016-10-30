@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/mormalize.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
@@ -32,12 +33,12 @@
         <div class="main-image">
           <img src="img/main-image.jpg" alt="Welcome to the gorgeous Sedona" width="1200" height="508">
         </div>
-        <article class="main-features">
+        <section class="main-features">
           <header class="features-header">
             <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
           </header>
-          <div class="row row-blue">
+          <div class="row row-blue clearfix">
             <div class="reason-item">
               <h3>Настоящий городок</h3>
               <span>- №1 -</span>
@@ -47,7 +48,7 @@
               <img src="img/reason-image-1.jpg" alt="Настоящий городок" width="800" height="256">
             </figure>
           </div>
-          <div class="row">
+          <div class="row clearfix">
             <div class="features-item features-item-home">
               <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -61,9 +62,9 @@
               <p>Не только китайского, но и местного производства!</p>
             </div>
           </div>
-          <div class="row row-blue">
+          <div class="row row-blue clearfix">
             <figure class="reason-image">
-              <img src="img/reason-image-2.jpg" alt="Мост дьявола"  width="800" height="256">
+                <img src="img/reason-image-2.jpg" alt="Мост дьявола"  width="800" height="256">
             </figure>
             <div class="reason-item">
               <h3>Там есть мост дьявола</h3>
@@ -71,7 +72,7 @@
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </div>
-          <div class="row row-gray">
+          <div class="row row-gray clearfix">
             <div class="reason-item">
               <h3>Небольшая площадь</h3>
               <span>- №3 -</span>
@@ -88,7 +89,7 @@
               <p>Большинство едет в Гранд каньон и толпится там</p>
             </div>
           </div>
-        </article>
+        </section>
         <div class="search-block">
           <div class="search-form-title">
             <h2>Заинтересовались?</h2>
@@ -135,7 +136,7 @@
           </div>
         </div>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer clearfix">
         <div class="footer-contacts">
           #visitSEDONA
         </div>
