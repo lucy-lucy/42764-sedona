@@ -36,16 +36,12 @@ h2 {
   line-height: 0.8;
 }
 
-/* Wrapper */
-
 .wrapper {
   min-width: 768px;
   max-width: 1200px;
   margin: 0 auto;
   background-color: white;
 }
-
-/* Header */
 
 .main-header {
   position: relative;
@@ -86,16 +82,12 @@ h2 {
   font-size: 0;
 }
 
-/* Header Image */
-
 .main-image {
   width: 100%;
   margin: 0 auto;
   text-align: center;
   font-size: 0;
 }
-
-/* Main Features */
 
 .main-features {
   width: 100%;
@@ -144,8 +136,6 @@ h2 {
   text-align: center;
 }
 
-/* Search Form */
-
 .search-block {
   width: 600px;
   margin: 0 auto;
@@ -155,8 +145,6 @@ h2 {
 .search-form-title h2 {
   margin-top: 0;
 }
-
-/* Footer */
 
 .main-footer {
   width: 100%;
@@ -179,7 +167,7 @@ h2 {
 }
 
 .filter-block {
-      padding: 0;
+  padding: 0;
   padding-top: 20px;
   font-size: 16px;
   line-height: 21px;
@@ -197,7 +185,7 @@ h2 {
 .filter-infrastructure {
   float: left;
   width: 153px;
-  margin-right: 11%;
+  margin-right: 10%;
 }
 
 .filter-accommodation {
@@ -207,7 +195,7 @@ h2 {
 
 .filter-cost-per-day {
   float: right;
-  width: auto;
+  width: 225px;
 }
 
 .clearfix::after {
@@ -216,20 +204,20 @@ h2 {
   clear: both;
 }
 
+.hotel-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .hotel-item-photo {
   float: left;
   width: 135px;
-  margin: 0;
-  margin-top: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
   font-size: 0;
 }
 
 .hotel-item-description {
   float: left;
-  width: auto;
-  margin: 30px auto;
+  width: 315px;
 }
 
 .hotel-item-description h2 {
@@ -238,8 +226,7 @@ h2 {
 
 .hotel-item-rating {
   float: right;
-  width: auto;
-  margin: 30px auto;
+  width: 155px;
 }
 
 .hotel-item-rating-stars {
@@ -256,25 +243,37 @@ h2 {
   width: 115px;
 }
 
+.search-navigation {
+  padding-top: 30px;
+}
+
 .search-navigation h2 {
   float: left;
   width: 135px;
   margin: 0;
-  margin-top: 30px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
 .search-navigation-sorting {
   float: left;
-  width: auto;
-  margin-top: 30px;
+  width: 375px;
+}
+
+.search-navigation-sorting span {
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .search-navigation-sorting ul {
   display: inline-block;
-  font-size: 0;
+  vertical-align: bottom;
   padding: 0;
+  font-size: 0;
+  font-weight: 400;
 }
 
 .search-navigation-sorting li {
@@ -286,11 +285,12 @@ h2 {
 
 .search-navigation-btns {
   float: right;
-  width: auto;
-  margin-top: 30px;
+  width: 155px;
 }
 
 .search-navigation-btns ul {
+  display: inline-block;
+  vertical-align: bottom;
   padding: 0;
   font-size: 0;
 }
