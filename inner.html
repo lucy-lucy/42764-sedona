@@ -29,7 +29,7 @@
         </div>
       </header>
       <main class="main-content">
-        <form class="filter-block" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter-block clearfix" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter-infrastructure">
             <legend>Инфраструктура:</legend>
             <input type="checkbox" name="swimmingpool" id="swimmingpool" checked>
@@ -56,21 +56,24 @@
             <button class="search-show-btn" type="submit">Показать</button>
           </fieldset>
         </form>
-        <div class="search-navigation">
+        <div class="search-navigation clearfix">
           <h2>НАЙДЕНО: 3</h2>
-          <span>Сортировка:</span>
-          <ul>
-            <li>
-              <a href="#">По цене</a>
-            </li>
-            <li>
-              <a href="#">По типу</a>
-            </li>
-            <li>
-              <a href="#">По рейтингу</a>
-            </li>
+          <div class="search-navigation-sorting">
+            <span>Сортировка:</span>
+            <ul>
+              <li>
+                <a href="#">По цене</a>
+              </li>
+              <li>
+               <a href="#">По типу</a>
+              </li>
+              <li>
+                <a href="#">По рейтингу</a>
+              </li>
           </ul>
-          <ul>
+          </div>
+          <div class="search-navigation-btns">
+            <ul>
             <li>
               <a href="#">▲</a>
             </li>
@@ -78,10 +81,10 @@
               <a href="#">▼</a>
             </li>
           </ul>
+          </div>
         </div>
-        <div class="hotels-search-result">
-
-          <article class="hotel-item">
+        <div class="hotels-search-result clearfix">
+          <article class="hotel-item clearfix">
             <figure class="hotel-item-photo">
               <img src="img/amara-resort-and-spa.jpg" alt="Amara Resort & Spa" width="135" height="90">
             </figure>
@@ -102,7 +105,7 @@
             </div>
           </article>
 
-          <article class="hotel-item">
+          <article class="hotel-item clearfix">
             <figure class="hotel-item-photo">
               <img src="img/desert-quail-inn.jpg" alt="Desert Quail Inn" width="135" height="90">
             </figure>
@@ -123,7 +126,7 @@
             </div>
           </article>
 
-          <article class="hotel-item">
+          <article class="hotel-item clearfix">
             <figure class="hotel-item-photo">
               <img src="img/villas-at-poco-diablo.jpg" alt="Villas At Poco Diablo" width="135" height="90">
             </figure>
