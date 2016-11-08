@@ -13,7 +13,7 @@
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="index.html">Информация</a>
+              <a href="#">Информация</a>
             </li>
             <li>
               <a href="#">Фото и видео</a>
@@ -22,12 +22,14 @@
               <a href="#">Карта штата</a>
             </li>
             <li>
-              <a href="#">Гостиницы</a>
+              <a class="active" href="#">Гостиницы</a>
             </li>
           </ul>
         </nav>
         <div class="header-logo">
-          <img src="img/sedona-logo.png" alt="Sedona" width="138" height="70">
+          <a href="index.html">
+            <img src="img/sedona-logo.png" alt="Sedona" width="138" height="70">
+          </a>
         </div>
       </header>
       <main class="main-content">
@@ -50,12 +52,20 @@
             <input type="checkbox" name="apartments" id="apartments" checked>
             <label for="apartments">Апартаменты</label>
           </fieldset>
-          <fieldset class="filter-cost-per-day">
+          <fieldset class="filter-range">
             <legend>Стоимость в сутки (Р):</legend>
-            <span class="cost-from">От 0</span>
-            <span class="cost-to">До 3000</span>
-            <!-- Место для кастомного элемента (слайдера) -->
-            <button class="search-show-btn" type="submit">Показать</button>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
           </fieldset>
         </form>
         <div class="search-navigation clearfix">
@@ -91,7 +101,7 @@
               <img src="img/amara-resort-and-spa.jpg" alt="Amara Resort & Spa" width="135" height="90">
             </figure>
             <div class="hotel-item-description">
-              <h2>Amara Resort & SPA</h2>
+              <a class="hotel-item-title" href="#">Amara Resort & SPA</a>
               <div class="hotel-item-type">
                 <span>Гостиница</span>
                 <a class="hotel-details-btn" href="#">Подробнее</a>
@@ -102,7 +112,12 @@
               </div>
             </div>
             <div class="hotel-item-rating">
-              <span class="hotel-item-rating-stars">★ ★ ★ ★</span>
+              <ul class="hotel-item-rating-stars">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
               <span class="hotel-item-rating-value">Рейтинг: 8,5</span>
             </div>
           </article>
@@ -112,7 +127,7 @@
               <img src="img/desert-quail-inn.jpg" alt="Desert Quail Inn" width="135" height="90">
             </figure>
             <div class="hotel-item-description">
-              <h2>Desert Quail Inn</h2>
+              <a class="hotel-item-title" href="#">Desert Quail Inn</a>
               <div class="hotel-item-type">
                 <span>Мотель</span>
                 <a class="hotel-details-btn" href="#">Подробнее</a>
@@ -123,7 +138,10 @@
               </div>
             </div>
             <div class="hotel-item-rating">
-              <span class="hotel-item-rating-stars">★ ★</span>
+              <ul class="hotel-item-rating-stars">
+                <li></li>
+                <li></li>
+              </ul>
               <span class="hotel-item-rating-value">Рейтинг: 8,9</span>
             </div>
           </article>
@@ -133,7 +151,7 @@
               <img src="img/villas-at-poco-diablo.jpg" alt="Villas At Poco Diablo" width="135" height="90">
             </figure>
             <div class="hotel-item-description">
-              <h2>Villas At Poco Diablo</h2>
+              <a class="hotel-item-title" href="#">Villas At Poco Diablo</a>
               <div class="hotel-item-type">
                 <span>Апартаменты</span>
                 <a class="hotel-details-btn" href="#">Подробнее</a>
@@ -144,14 +162,18 @@
               </div>
             </div>
             <div class="hotel-item-rating">
-              <span class="hotel-item-rating-stars">★ ★ ★</span>
+              <ul class="hotel-item-rating-stars">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
               <span class="hotel-item-rating-value">Рейтинг: 9,2</span>
             </div>
           </article>
 
         </div>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer clearfix">
         <div class="footer-contacts">
           #visitSEDONA
         </div>
@@ -162,9 +184,7 @@
         </div>
         <div class="footer-copyright">
           WEBSITE by
-          <a href="https://htmlacademy.ru">
-            <img src="img/htmlacademy-logo.png" alt="HTMLAcademy" width="113" height="39">
-          </a>
+          <a href="https://htmlacademy.ru"></a>
         </div>
       </footer>
     </div>
