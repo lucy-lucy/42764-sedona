@@ -395,8 +395,10 @@ body {
   display: inline-block;
   width: 113px;
   height: 39px;
-  vertical-align: middle;
   margin-left: 8px;
+
+  vertical-align: middle;
+
   background: url(../img/htmlacademy-logo.png) no-repeat;
 }
 
@@ -457,8 +459,9 @@ body {
 
 .search-form-title a {
   display: block;
-  padding: 31px 10px;
+  padding: 34px 10px;
 
+  font-weight: 700;
   font-size: 21px;
   text-align: center;
   color: #ffffff;
@@ -530,6 +533,7 @@ body {
 
   background-color: #f2f2f2;
   border: none;
+  outline: none;
 }
 
 .search-form-element input:hover {
@@ -579,13 +583,14 @@ input[type="text"]::-webkit-input-placeholder {
 
 .plus-minus-btn {
   display: inline-block;
-  width: 41px;
+  width: 38px;
   height: 38px;
   padding: 0;
 
   vertical-align: middle;
 
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -619,13 +624,15 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 .search-form-field-half input {
-  width: 32px;
+  width: 38px;
   height: 38px;
   margin: 0;
   padding: 0;
 
   vertical-align: middle;
   text-align: center;
+
+  outline: none;
 }
 
 .search-form-field-half .search-form-element {
@@ -640,6 +647,7 @@ input[type="text"]::-webkit-input-placeholder {
   width: 438px;
   padding: 20px 10px;
 
+  font-weight: 700;
   font-size: 21px;
   text-align: center;
   color: #ffffff;
@@ -744,7 +752,7 @@ input[type="text"]::-webkit-input-placeholder {
 
 .filter-range {
   float: right;
-  width: 315px;
+  width: 30%;
   margin: 0;
   padding: 0;
 
@@ -799,12 +807,13 @@ input[type="text"]::-webkit-input-placeholder {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+  width: 35%;
+  padding: 0;
+  padding-left: 15%;
 }
 
 .price-controls input {
-  width: 50px;
+  width: 40px;
   margin: 0;
 
   font: inherit;
@@ -812,6 +821,7 @@ input[type="text"]::-webkit-input-placeholder {
 
   background: none;
   border: none;
+  outline: none;
 }
 
 .range-controls {
@@ -866,6 +876,7 @@ input[type="text"]::-webkit-input-placeholder {
 
   font-size: 14px;
   line-height: 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -880,7 +891,6 @@ input[type="text"]::-webkit-input-placeholder {
 
   background: #ffffff;
 }
-
 
 .search-navigation {
   padding-top: 30px;
@@ -1074,7 +1084,9 @@ input[type="text"]::-webkit-input-placeholder {
   display: inline-block;
   width: 18px;
   height: 17px;
+
   vertical-align: middle;
+
   background: url(../img/star.png) no-repeat center;
 }
 
