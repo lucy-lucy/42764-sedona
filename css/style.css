@@ -121,6 +121,10 @@ body {
   transform: translateX(50%);
 }
 
+.header-logo a {
+  display: block;
+}
+
 .main-image {
   position: relative;
 
@@ -702,13 +706,13 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 .filter-block {
-  padding: 20px 6% 0 6%;
+  padding: 23px 6% 0 6%;
 
   font-size: 16px;
   line-height: 1.75;
   color: #ffffff;
 
-  background: url(../img/filter-background.jpg) #47627c;
+  background: #47627c url(../img/filter-background.jpg) no-repeat;
 }
 
 .filter-block label,
@@ -722,7 +726,7 @@ input[type="text"]::-webkit-input-placeholder {
 .filter-block label {
   position: relative;
 
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   padding-left: 40px;
 
   cursor: pointer;
@@ -763,14 +767,20 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 .filter-block legend {
-  margin-bottom: 25px;
+  margin-bottom: 7px;
+}
+
+.filter-accommodation legend,
+.filter-infrastructure legend {
+  margin-bottom: 21px;
 }
 
 .filter-infrastructure {
   float: left;
   width: 153px;
   margin: 0;
-  margin-right: 7%;
+  margin-right: 9.5%;
+  margin-bottom: 7px;
   padding: 0;
 
   border-style: none;
@@ -780,14 +790,19 @@ input[type="text"]::-webkit-input-placeholder {
   float: left;
   width: 153px;
   margin: 0;
+  margin-bottom: 7px;
   padding: 0;
 
   border-style: none;
 }
 
+.filter-accommodation label {
+  padding-left: 44px;
+}
+
 .filter-range {
   float: right;
-  width: 30%;
+  width: 31%;
   margin: 0;
   padding: 0;
 
@@ -808,8 +823,9 @@ input[type="text"]::-webkit-input-placeholder {
 .price-controls {
   position: relative;
 
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
+  margin-left: 10px;
 
   font-size: 0;
 
@@ -834,17 +850,22 @@ input[type="text"]::-webkit-input-placeholder {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 31px;
   vertical-align: top;
 
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
-  width: 35%;
+.price-controls .min-price {
+  width: 32%;
   padding: 0;
-  padding-left: 15%;
+  padding-left: 18%;
+}
+
+.price-controls .max-price {
+  width: 33%;
+  padding: 0;
+  padding-left: 17%;
 }
 
 .price-controls input {
@@ -863,6 +884,7 @@ input[type="text"]::-webkit-input-placeholder {
   position: relative;
 
   margin-bottom: 32px;
+  margin-left: 10px;
 }
 
 .range-controls .scale {
@@ -872,7 +894,7 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 .range-controls .bar {
-  width: 80%;
+  width: 79.5%;
   height: 2px;
 
   background: #ffffff;
@@ -901,13 +923,13 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79.5%;
 }
 
 .btn-transparent {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 33px;
 
   font-size: 14px;
   line-height: 20px;
@@ -928,19 +950,17 @@ input[type="text"]::-webkit-input-placeholder {
 }
 
 .search-navigation {
-  padding-top: 30px;
-  padding-right: 6%;
-  padding-left: 6%;
+  padding: 30px 6% 1px 6%;
 
   border-bottom: 1px solid #e5e5e5;
 }
 
-.search-navigation h2 {
+.search-navigation b {
   float: left;
   width: 135px;
   margin: 0;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-right: 29px;
+  margin-bottom: 29px;
 
   font-size: 21px;
   line-height: 26px;
@@ -953,12 +973,15 @@ input[type="text"]::-webkit-input-placeholder {
 
 .search-navigation-sorting span {
   display: inline-block;
+  margin-right: 3px;
   padding: 0;
+  padding-top: 8px;
 
   font-weight: 400;
   font-size: 12px;
-  line-height: 26px;
+  /*line-height: 26px;*/
   vertical-align: bottom;
+  /*padding-top: 2px;*/
 }
 
 .search-navigation-sorting ul {
@@ -972,7 +995,7 @@ input[type="text"]::-webkit-input-placeholder {
 
 .search-navigation-sorting li {
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 33px;
 
   list-style-type: none;
   font-size: 12px;
@@ -1006,6 +1029,7 @@ input[type="text"]::-webkit-input-placeholder {
 
 .search-navigation-btns ul {
   display: inline-block;
+  margin-left: 20px;
   padding: 0;
 
   font-size: 0;
@@ -1014,16 +1038,20 @@ input[type="text"]::-webkit-input-placeholder {
 
 .search-navigation-btns li {
   display: inline-block;
-  margin-left: 14px;
+  /*margin-left: 14px;*/
 
   list-style-type: none;
   font-size: 12px;
 }
 
+.search-navigation-btns li:first-child {
+  margin-right: 12px;
+}
+
 .search-navigation-btns a {
   display: block;
   width: 11px;
-  height: 26px;
+  height: 27px;
 
   text-decoration: none;
 }
@@ -1054,7 +1082,7 @@ input[type="text"]::-webkit-input-placeholder {
 
 
 .hotel-item {
-  padding: 30px 6%;
+  padding: 26px 6%;
 
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1064,6 +1092,7 @@ input[type="text"]::-webkit-input-placeholder {
   width: 135px;
   margin: 0;
   margin-right: 30px;
+  padding: 4px 0;
 
   font-size: 0;
 }
@@ -1077,9 +1106,13 @@ input[type="text"]::-webkit-input-placeholder {
   width: 285px;
 }
 
+.hotel-item-description h2 {
+  margin: 0;
+}
+
 .hotel-item-description .hotel-item-title {
   display: inline-block;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
   padding: 0;
 
   font-weight: bold;
@@ -1106,7 +1139,8 @@ input[type="text"]::-webkit-input-placeholder {
 .hotel-item-rating-stars {
   display: block;
   width: 110px;
-  margin-bottom: 25px;
+  margin: 0;
+  margin-bottom: 47px;
   padding: 0;
 
   list-style: none;
@@ -1154,7 +1188,7 @@ input[type="text"]::-webkit-input-placeholder {
 
 .hotel-item-description span {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 17px;
 
   color: #333333;
 }
