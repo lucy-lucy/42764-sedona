@@ -95,7 +95,7 @@
           <div class="search-form-title">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a href="#">Поиск гостиницы в Седоне</a>
+            <a class="js-link" href="#">Поиск гостиницы в Седоне</a>
           </div>
           <div class="search-form">
             <form action="https://echo.htmlacademy.ru" method="post">
@@ -109,7 +109,7 @@
               <fieldset class="search-form-field">
                 <label for="departure-date">Дата выезда:</label>
                 <div class="search-form-element">
-                  <input type="text" name="adults" id="departure-date" placeholder="4 июля 2016">
+                  <input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2016">
                   <button class="calendar-btn" type="button"></button>
                 </div>
               </fieldset>
@@ -133,9 +133,7 @@
             </form>
           </div>
         </div>
-        <div class="search-map">
-            <!-- Место для интерактивной карты? -->
-        </div>
+        <div class="search-map" id="map"></div>
       </main>
       <footer class="main-footer main-page-footer clearfix">
         <div class="footer-contacts">
@@ -152,5 +150,21 @@
         </div>
       </footer>
     </div>
+    <script>
+        function initMap() {
+        var sedona = {lat: 34.869867, lng: -111.760978};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: sedona,
+          scrollwheel: false,
+          zoom: 9
+        });
+        var marker = new google.maps.Marker({
+            position: sedona,
+            map: map
+          });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbgd35XyEg8lgLpL7bFbwgSNqUbE1Sbvs&callback=initMap" async defer></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
