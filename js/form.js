@@ -1,12 +1,10 @@
 var link = document.querySelector(".js-link");
 var form = document.querySelector('.search-form');
 
+form.classList.add("search-form-hide");
+
 link.addEventListener ("click", function(event) {
   event.preventDefault();
-  if (!form.classList.contains("search-form-hide")) {
-    form.classList.toggle("search-form-hide");
-  }
-  else {
-    form.classList.toggle("search-form-show");
-  }
+  form.classList.toggle("search-form-hide");
+  form.classList.toggle("search-form-show");
 });

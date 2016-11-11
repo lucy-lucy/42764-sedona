@@ -459,9 +459,9 @@ body {
 
 .search-form {
   position: absolute;
-  z-index: 50;
   top: 100%;
   left: 50%;
+  z-index: 50;
 
   padding: 55px 55px;
 
@@ -476,6 +476,7 @@ body {
 
 .search-form-show {
   display: block;
+
   animation: slide-down 1s;
 }
 
@@ -512,6 +513,7 @@ body {
   text-decoration: none;
 
   background-color: #766357;
+  cursor: pointer;
 }
 
 .search-form-title a:hover {
