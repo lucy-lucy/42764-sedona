@@ -4,7 +4,6 @@ var form = document.querySelector(".search-form");
 if(form) {
   var arrivalDate = form.querySelector("[name=arrival-date]");
   var departureDate = form.querySelector("[name=departure-date]");
-  var searchBtn = form.querySelector('.search-btn');
 
   form.classList.add("search-form-hide");
 }
@@ -21,7 +20,7 @@ if(link) {
   });
 }
 
-if(form && searchBtn) {
+if(form) {
   form.addEventListener("submit", function(event) {
     if(!arrivalDate.value || !departureDate.value) {
       event.preventDefault();
