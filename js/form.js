@@ -1,27 +1,47 @@
 var link = document.querySelector(".js-link");
 var form = document.querySelector(".search-form");
 
-var arrivalDate = form.querySelector("[name=arrival-date]");
-var departureDate = form.querySelector("[name=departure-date]");
-var searchBtn = form.querySelector('.search-btn');
+if(form) {
+  var arrivalDate = form.querySelector("[name=arrival-date]");
+  var departureDate = form.querySelector("[name=departure-date]");
+  var searchBtn = form.querySelector('.search-btn');
 
-form.classList.add("search-form-hide");
+  form.classList.add("search-form-hide");
+}
 
-link.addEventListener ("click", function(event) {
-  event.preventDefault();
-  form.classList.remove("search-form-error");
-  form.classList.toggle("search-form-hide");
-  form.classList.toggle("search-form-show");
-  arrivalDate.focus();
-});
+if(link) {
+  link.addEventListener ("click", function(event) {
+    event.preventDefault();
+    form.classList.remove("search-form-error");
+    form.classList.toggle("search-form-hide");
+    form.classList.toggle("search-form-show");
+    if(arrivalDate) {
+      arrivalDate.focus();
+    }
+  });
+}
 
-form.addEventListener("submit", function(event) {
-  if(form && searchBtn){
+if(form && searchBtn) {
+  form.addEventListener("submit", function(event) {
     if(!arrivalDate.value || !departureDate.value) {
       event.preventDefault();
       form.classList.remove("search-form-error");
       form.offsetWidth;
       form.classList.add("search-form-error");
     }
-  }
-});
+  });
+}
+
+function initMap() {
+  var sedona = {lat: 34.869867, lng: -111.760978};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: sedona,
+    scrollwheel: false,
+    zoom: 9,
+    disableDefaultUI: true
+  });
+  var marker = new google.maps.Marker({
+    position: sedona,
+    map: map
+  });
+}
